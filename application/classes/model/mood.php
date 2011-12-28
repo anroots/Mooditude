@@ -16,12 +16,20 @@ class Model_Mood extends ORM
 	 */
 	public function add_score($score)
 	{
-		$this->score = $score;
-		$this->user_id = User::current()->id;
+		
+		// Update existing score (only one score per day)
+		if (($today = $this->today()) !== NULL) {
+			$model = $today;
+		} else {
+			$model = $this;
+		}
+		
+		$model->score = $score;
+		$model->user_id = User::current()->id;
 
 		try {
-			$this->save();
-			return $this->id;
+			$model->save();
+			return $model->id;
 		} catch (ORM_Validation_Exception $e) {
 			Validation::show_errors($e);
 			return FALSE;
@@ -55,5 +63,25 @@ class Model_Mood extends ORM
 		}
 
 		return Kohana::$config->load('moods.' . $this->score);
+	}
+
+	/**
+	 * Get the model for today's mood update
+	 *
+	 * @since 1.0
+	 * @return null|Model_Mood
+	 */
+	public function today()
+	{
+		$q = ORM::factory('mood')
+				->where('created', '>=', Date::mysql_date(date('Y-m-d')))
+				->where('created', '<=', Date::mysql_date(date('Y-m-d 23:59:59')))
+				->where('user_id', '=', User::current()->id)
+				->find();
+		
+		if ($q->loaded()) {
+			return $q;
+		}
+		return NULL;
 	}
 }

@@ -48,7 +48,7 @@ class Model_User extends Model_Auth_User
 		try {
 			$this->save();
 			$this->add('roles', 1);
-
+			Auth::instance()->login($data['username'], $data['password']);
 		} catch (ORM_Validation_Exception $e) {
 			Validation::show_errors($e);
 			return FALSE;
@@ -79,6 +79,9 @@ class Model_User extends Model_Auth_User
 	 */
 	public static function current()
 	{
+		if (Model_User::$_current_user === NULL) {
+			Model_User::$_current_user =  Auth::instance()->get_user();
+		}
 		return Model_User::$_current_user;
 	}
 

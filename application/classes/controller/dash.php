@@ -12,24 +12,17 @@ class Controller_Dash extends Controller_Main
 	{
 		parent::before();
 		$this->title = __('Dashboard');
-		$this->mood = ORM::factory('mood');
+
+		$mood = ORM::factory('mood')->today();
+		$this->mood = $mood === NULL ? ORM::factory('mood') : $mood;
 	}
 
 	public function action_index()
 	{
+		$this->content->mood = $this->mood;
 		Assets::use_script('raty');
-
 	}
 
-	/**
-	 * Add a new mood update and respond with JSON status code and mood message
-	 */
-	public function action_update()
-	{
-		if ($this->mood->add_score($this->id)) {
-			$this->respond(parent::STATUS_OK, $this->mood->message());
-		}
-		$this->respond(parent::STATUS_ERROR);
-	}
+
 
 }

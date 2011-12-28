@@ -14,6 +14,7 @@ body {
 h1 {
     text-shadow: 1px 1px 3px #aaaaaa;
 }
+
 #container {
     background-color: trancparent;
     width: 30%;
@@ -21,6 +22,17 @@ h1 {
     margin: 4% auto auto auto;
 }
 
+header {
+
+    h1 {
+        a,
+        a:visited,
+        a:hover {
+            color: $black-night;
+            text-decoration: none;
+        }
+    }
+}
 
 
 #main {

@@ -25,7 +25,7 @@
 <!-- User signup -->
 <div id="modal-signup" class="modal hide fade">
 
-	<form action="<?=URL::base()?>public/auth/signup" method="post" class="form-stacked">
+	<form action="<?=URL::base()?>public/auth" method="post" class="form-stacked">
 		<div class="modal-header">
 			<a href="#" class="close">&times;</a>
 
@@ -69,7 +69,7 @@
 
 		</div>
 		<div class="modal-footer">
-			<input type="submit" class="btn primary" value="<?=__('Signup')?>"/>
+			<input type="submit" name="signup" class="btn primary" value="<?=__('Signup')?>"/>
 			<a href="#" class="btn secondary"><?=__('I changed my mind')?></a>
 		</div>
 	</form>

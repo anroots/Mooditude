@@ -23,6 +23,16 @@ h1 {
 }
 
 header {
+    
+    h1 {
+        a,
+        a:visited,
+        a:hover {
+            color: $black-night;
+            text-decoration: none;
+        }
+    }
+    
 	a[href$="logout"] {
 		float: right;
 		margin-top: -40px;

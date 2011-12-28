@@ -25,7 +25,7 @@ class Controller_Public_Auth extends Controller_Public_Main
 				}
 			}
 		}
-		
+
 		Assets::use_script('modal');
 	}
 
@@ -45,7 +45,7 @@ class Controller_Public_Auth extends Controller_Public_Main
 		if ($this->request->post()) {
 
 			// Try to login
-			if (Auth::instance()->login($this->request->post('user'), $this->request->post('pass'))) {
+			if (Auth::instance()->login($this->request->post('user'), $this->request->post('pass'), TRUE)) {
 				$this->request->redirect('dash');
 			} else {
 				Notify::msg('Login failed.', 'error');

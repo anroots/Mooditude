@@ -28,7 +28,9 @@
 
 <div id="container">
 	<header>
-		<h1><?=Kohana::$config->load('app.title')?></h1>
+		<h1>
+			<a href="<?=URL::base()?>"><?=Kohana::$config->load('app.title')?></a>
+		</h1>
 
 		<div class="clearfix"></div>
 	</header>
