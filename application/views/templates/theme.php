@@ -23,6 +23,9 @@
 
 	<script src="<?=URL::base()?>assets/shared/js/libs/modernizr-2.0.6.min.js"></script>
 	<script src="<?=URL::base()?>assets/shared/js/libs/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript">
+		var base_url = '<?=URL::base()?>';
+	</script>
 </head>
 
 <body>
@@ -30,6 +33,7 @@
 <div id="container">
 	<header>
 		<h1><?=Kohana::$config->load('app.title')?></h1>
+
 		<h2><?=$title?></h2>
 
 		<div class="clearfix"></div>

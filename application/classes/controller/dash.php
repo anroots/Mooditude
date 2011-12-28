@@ -1,7 +1,8 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Dash extends Commoneer_Controller_Template
+class Controller_Dash extends Commoneer_Controller_Ajax
 {
+
 	public function before()
 	{
 		parent::before();
@@ -12,6 +13,11 @@ class Controller_Dash extends Commoneer_Controller_Template
 	{
 		Assets::use_script('raty');
 
+	}
+
+	public function action_update()
+	{
+		$this->respond();
 	}
 
 }

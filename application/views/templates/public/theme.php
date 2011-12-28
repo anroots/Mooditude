@@ -16,7 +16,7 @@
 
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="<?=URL::base()?>assets/shared/css/bootstrap-1.4.0.min.css">
-	<link rel="stylesheet" href="<?=URL::base()?>assets/css/theme.css">
+	<link rel="stylesheet" href="<?=URL::base()?>assets/css/public/theme.css">
 	<!-- end CSS-->
 
 	<script src="<?=URL::base()?>assets/shared/js/libs/modernizr-2.0.6.min.js"></script>
