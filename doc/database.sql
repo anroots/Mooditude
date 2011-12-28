@@ -34,6 +34,7 @@ CREATE  TABLE IF NOT EXISTS `projects_mooditude`.`users` (
   `password` CHAR(64) NOT NULL ,
   `logins` INT(10) UNSIGNED NOT NULL DEFAULT '0' ,
   `last_login` INT(10) UNSIGNED NULL DEFAULT NULL ,
+  `created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `uniq_username` (`username` ASC) )
 ENGINE = InnoDB
@@ -109,8 +110,8 @@ DROP TABLE IF EXISTS `projects_mooditude`.`moods` ;
 
 CREATE  TABLE IF NOT EXISTS `projects_mooditude`.`moods` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT ,
-  `created` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ,
-  `score` TINYINT(2) UNSIGNED NULL DEFAULT 5 COMMENT 'Mood score, range 0 - 10' ,
+  `created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+  `score` TINYINT(2) UNSIGNED NULL DEFAULT 5 COMMENT 'Mood score, range 1 - 10' ,
   `user_id` INT(11) UNSIGNED NOT NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `fk_moods_users1` (`user_id` ASC) ,
@@ -142,7 +143,7 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `projects_mooditude`;
-INSERT INTO `projects_mooditude`.`users` (`id`, `email`, `username`, `name`, `password`, `logins`, `last_login`) VALUES (1, 'test@sqroot.eu', 'test', 'Test User', 'd547799ebfca81165178259ca1af6b5a4ab07d2104e7f816cf2f36b42b2f50da', 1, 132121);
+INSERT INTO `projects_mooditude`.`users` (`id`, `email`, `username`, `name`, `password`, `logins`, `last_login`, `created`) VALUES (1, 'test@sqroot.eu', 'test', 'Test User', 'd547799ebfca81165178259ca1af6b5a4ab07d2104e7f816cf2f36b42b2f50da', 1, 132121, '2011-12-28 02:02:00');
 
 COMMIT;
 

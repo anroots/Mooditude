@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+	$.get(base_url + 'mood/today', function (json) {
+		if (json.status == 200 && json.response != 0) {
+			$('#star').raty('start', json.response);
+		}
+	});
 
 	$('#star').raty({
 		hintList:['bad', 'poor', 'regular', 'good', 'gorgeous'],

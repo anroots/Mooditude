@@ -14,6 +14,7 @@ class Model_User extends Model_Auth_User
 	protected $_has_many = array(
 		'user_tokens' => array('model' => 'user_token'),
 		'roles' => array('model' => 'role', 'through' => 'roles_users'),
+		'moods' => array('model' => 'mood')
 	);
 
 
@@ -80,7 +81,7 @@ class Model_User extends Model_Auth_User
 	public static function current()
 	{
 		if (Model_User::$_current_user === NULL) {
-			Model_User::$_current_user =  Auth::instance()->get_user();
+			Model_User::$_current_user = Auth::instance()->get_user();
 		}
 		return Model_User::$_current_user;
 	}
@@ -103,4 +104,21 @@ class Model_User extends Model_Auth_User
 		return TRUE;
 	}
 
+
+	/**
+	 * Get statistics about the user
+	 *
+	 * @since 1.0
+	 * @return array
+	 */
+	public function statistics()
+	{
+		$m = ORM::factory('mood');
+
+		return array(
+			'since' => User::current()->created,
+			'count' => $m->count_all(),
+			'average' => $m->average()
+		);
+	}
 }

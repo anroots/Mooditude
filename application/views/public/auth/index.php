@@ -1,6 +1,7 @@
 <?php defined('SYSPATH') or die('No direct script access.') ?>
 
-<p><?=__('Please log in.')?></p>
+<p><?=__('Mooditude is a simple service for ')?></p>
+
 <form action="<?=URL::base()?>public/auth/login" method="post" class="form-stacked">
 	<label for="user"><?=__('Username')?>:</label>
 	<input type="text" id="user" placeholder="Mihkel" maxlength="32" name="user" autofocus required/>
@@ -67,6 +68,11 @@
 
 			<div class="clearfix"></div>
 
+			<p class="small light">
+				<?=__('Please take into consideration that this service was developed mainly<br /> for personal use.
+				The author does not give any guarantees to any aspects<br /> of it\'s usage.
+				You are free to fork the project and adjust it to your needs.')?>
+			</p>
 		</div>
 		<div class="modal-footer">
 			<input type="submit" name="signup" class="btn primary" value="<?=__('Signup')?>"/>
