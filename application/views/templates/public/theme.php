@@ -17,7 +17,6 @@
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="<?=URL::base()?>assets/shared/css/bootstrap-1.4.0.min.css">
 	<link rel="stylesheet" href="<?=URL::base()?>assets/css/theme.css">
-	<link rel="stylesheet" href="<?=URL::base()?>assets/css/main.css">
 	<!-- end CSS-->
 
 	<script src="<?=URL::base()?>assets/shared/js/libs/modernizr-2.0.6.min.js"></script>
@@ -28,7 +27,6 @@
 <div id="container">
 	<header>
 		<h1><?=Kohana::$config->load('app.title')?></h1>
-		<h2><?=$title?></h2>
 
 		<div class="clearfix"></div>
 	</header>

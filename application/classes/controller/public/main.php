@@ -2,7 +2,7 @@
 
 class Controller_Public_Main extends Commoneer_Controller_Template {
 
-    public $template = 'templates/theme';
+    public $template = 'templates/public/theme';
 
 
 }
