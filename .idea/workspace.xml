@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d2b8ef9-e2f1-4f85-8a12-ffd8558637c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/notify/bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scss/definitions.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/auth/login.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/dash/index.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/templates/main.php" afterPath="$PROJECT_DIR$/application/views/templates/theme.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mooditude.iml" afterPath="$PROJECT_DIR$/.idea/mooditude.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/bootstrap.php" afterPath="$PROJECT_DIR$/application/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/classes/controller/main.php" afterPath="$PROJECT_DIR$/application/classes/controller/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/notify.php" afterPath="$PROJECT_DIR$/application/config/notify.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/theme.scss" afterPath="$PROJECT_DIR$/assets/scss/theme.scss" />
     </list>
     <ignored path="mooditude.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,10 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="theme.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="theme.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/templates/theme.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="1.0">
+            <state line="38" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="-5.987654">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="40" selection-start="659" selection-end="670" vertical-scroll-proportion="0.026501767">
               <folding />
             </state>
           </provider>
@@ -89,6 +89,7 @@
         <option value="$PROJECT_DIR$/assets/scss/theme.scss" />
         <option value="$PROJECT_DIR$/assets/scss/definitions.scss" />
         <option value="$PROJECT_DIR$/application/views/public/auth/index.php" />
+        <option value="$PROJECT_DIR$/application/config/database.php" />
       </list>
     </option>
   </component>
@@ -531,13 +532,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/classes/controller/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="25" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
@@ -638,7 +632,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/templates/theme.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="1.0">
+        <state line="38" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="-5.987654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="40" selection-start="659" selection-end="670" vertical-scroll-proportion="0.026501767">
           <folding />
         </state>
       </provider>
