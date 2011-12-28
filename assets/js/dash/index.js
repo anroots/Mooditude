@@ -16,7 +16,9 @@ $(document).ready(function () {
 			$.post(base_url + 'dash/update/' + score, function (json) {
 				if (json.status == 200) {
 					$('#star').fadeOut('slow');
-					notify(json.response, 'info', false);
+					notify(json.response, 'success', false);
+				} else {
+					notify(json.response, 'error', false);
 				}
 			});
 		}

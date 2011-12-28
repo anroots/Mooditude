@@ -35,6 +35,7 @@
 		<h1><?=Kohana::$config->load('app.title')?></h1>
 
 		<h2><?=$title?></h2>
+		<a href="<?=URL::base()?>public/auth/logout" title="<?=__('Log out')?>"><?=__('Logout')?></a>
 
 		<div class="clearfix"></div>
 	</header>

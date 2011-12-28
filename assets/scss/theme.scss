@@ -11,6 +11,7 @@ body {
 }
 
 
+
 h1 {
     text-shadow: 1px 1px 3px #aaaaaa;
 }
@@ -21,7 +22,14 @@ h1 {
     margin: 4% auto auto auto;
 }
 
-
+header {
+	a[href$="logout"] {
+		float: right;
+		margin-top: -40px;
+		margin-right: $default-padding;
+		font-variant: small-caps;
+	}
+}
 
 #main {
     background: $white;
@@ -36,17 +44,6 @@ h1 {
     p {
         color: $dark-gray;
     }
-
-    form {
-        margin-top: 1em;
-    }
-
-    .btn {
-        width: 136%;
-        position: relative;
-        left: -22%;
-        margin-top: 1em;
-    }
 }
 
 
@@ -56,7 +53,7 @@ footer {
     text-align: center;
     font-size: 10px;
     color: #777;
-    margin-top: 2%;
+    margin-top: 0;
     border-top-width: 0px;
 }
 

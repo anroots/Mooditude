@@ -23,5 +23,5 @@ function notify(text, type, translate) {
 	if (typeof translate == undefined) {
 		translate = true;
 	}
-	$('#notifications').append('<div data-alert class="alert-message fade in ' + type + '"><a class="close" href="#">×</a><p>' + translate ? str(text) : text + '</p></div>');
+	$('#notifications').append('<div data-alert class="alert-message fade in ' + type + '"><a class="close" href="#">×</a><p>' + (translate ? str(text) : text ) + '</p></div>');
 }

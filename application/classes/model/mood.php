@@ -16,9 +16,8 @@ class Model_Mood extends ORM
 	 */
 	public function add_score($score)
 	{
-		$user = Auth::instance()->get_user();
 		$this->score = $score;
-		$this->user_id = $user->id;
+		$this->user_id = User::current()->id;
 
 		try {
 			$this->save();

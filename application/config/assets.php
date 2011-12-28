@@ -45,6 +45,7 @@ return array(
         ),
         'js' => array(
             'raty' => '../assets/js/raty-2.1.0/js/jquery.raty.min',
+            'modal' => '../assets/shared/js/libs/bootstrap/modal-1.4.0.min',
         ),
         'less' => array(
 

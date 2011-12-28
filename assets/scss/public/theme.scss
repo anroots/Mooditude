@@ -26,7 +26,7 @@ h1 {
 #main {
     background: $white;
     min-height: 36%;
-    padding: $default-padding $default-padding 2px $default-padding;
+    padding: 20px 20px 2px 20px;
     width: 80%;
     margin: auto;
     overflow: hidden;
@@ -47,16 +47,14 @@ h1 {
         left: -22%;
         margin-top: 1em;
     }
+
 }
-
-
-
 
 footer {
     text-align: center;
     font-size: 10px;
     color: #777;
-    margin-top: 2%;
+    margin-top: 0;
     border-top-width: 0px;
 }
 
