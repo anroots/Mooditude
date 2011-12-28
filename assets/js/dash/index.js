@@ -13,8 +13,11 @@ $(document).ready(function () {
 		starOff:'star-off-big.png',
 		starOn:'star-on-big.png',
 		click:function (score, evt) {
-			$.post(base_url + 'dash/update/' + score, function () {
-				alert('updated');
+			$.post(base_url + 'dash/update/' + score, function (json) {
+				if (json.status == 200) {
+					$('#star').fadeOut('slow');
+					notify(json.response, 'info', false);
+				}
 			});
 		}
 	});

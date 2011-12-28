@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Main extends Commoneer_Controller_Template
+class Controller_Main extends Commoneer_Controller_Ajax
 {
 
 	public function before()

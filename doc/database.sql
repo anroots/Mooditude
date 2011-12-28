@@ -2,6 +2,8 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
 
+CREATE SCHEMA IF NOT EXISTS `projects_mooditude` ;
+USE `projects_mooditude` ;
 
 -- -----------------------------------------------------
 -- Table `projects_mooditude`.`roles`
@@ -124,3 +126,31 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- Data for table `projects_mooditude`.`roles`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `projects_mooditude`;
+INSERT INTO `projects_mooditude`.`roles` (`id`, `name`, `description`) VALUES (1, 'login', 'Can log in');
+INSERT INTO `projects_mooditude`.`roles` (`id`, `name`, `description`) VALUES (2, 'admin', 'Admin');
+
+COMMIT;
+
+-- -----------------------------------------------------
+-- Data for table `projects_mooditude`.`users`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `projects_mooditude`;
+INSERT INTO `projects_mooditude`.`users` (`id`, `email`, `username`, `name`, `password`, `logins`, `last_login`) VALUES (1, 'test@sqroot.eu', 'test', 'Test User', 'd547799ebfca81165178259ca1af6b5a4ab07d2104e7f816cf2f36b42b2f50da', 1, 132121);
+
+COMMIT;
+
+-- -----------------------------------------------------
+-- Data for table `projects_mooditude`.`roles_users`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `projects_mooditude`;
+INSERT INTO `projects_mooditude`.`roles_users` (`user_id`, `role_id`) VALUES (1, 1);
+
+COMMIT;

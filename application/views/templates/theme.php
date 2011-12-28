@@ -42,6 +42,7 @@
 
 	<div id="main" role="main">
 		<?=Notify::render()?>
+		<div id="notifications"></div>
 		<?=$content?>
 	</div>
 
@@ -52,5 +53,7 @@
 </div>
 <!--! end of #container -->
 <?=Assets::render(Assets::SCRIPT)?>
+<script src="<?=URL::base()?>assets/shared/js/libs/bootstrap/alerts-1.4.0.min.js"></script>
+<script src="<?=URL::base()?>assets/js/common.js"></script>
 </body>
 </html>
