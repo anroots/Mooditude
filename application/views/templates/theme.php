@@ -18,9 +18,11 @@
 	<link rel="stylesheet" href="<?=URL::base()?>assets/shared/css/bootstrap-1.4.0.min.css">
 	<link rel="stylesheet" href="<?=URL::base()?>assets/css/theme.css">
 	<link rel="stylesheet" href="<?=URL::base()?>assets/css/main.css">
+	<?=Assets::render(Assets::CSS)?>
 	<!-- end CSS-->
 
 	<script src="<?=URL::base()?>assets/shared/js/libs/modernizr-2.0.6.min.js"></script>
+	<script src="<?=URL::base()?>assets/shared/js/libs/jquery-1.7.1.min.js"></script>
 </head>
 
 <body>
@@ -45,6 +47,6 @@
 	</footer>
 </div>
 <!--! end of #container -->
-
+<?=Assets::render(Assets::SCRIPT)?>
 </body>
 </html>

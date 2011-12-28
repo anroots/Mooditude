@@ -10,7 +10,7 @@ class Controller_Dash extends Commoneer_Controller_Template
 
 	public function action_index()
 	{
-
+		Assets::use_script('raty');
 
 	}
 
