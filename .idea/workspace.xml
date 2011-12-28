@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d2b8ef9-e2f1-4f85-8a12-ffd8558637c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scss/typo.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/eer_model.mwb.bak" afterPath="$PROJECT_DIR$/doc/eer_model.mwb.bak" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/eer_model.mwb" afterPath="$PROJECT_DIR$/doc/eer_model.mwb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/eer_model.pdf" afterPath="$PROJECT_DIR$/doc/eer_model.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/classes/controller/dash.php" afterPath="$PROJECT_DIR$/application/classes/controller/dash.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/classes/controller/mood.php" afterPath="$PROJECT_DIR$/application/classes/controller/mood.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/classes/model/mood.php" afterPath="$PROJECT_DIR$/application/classes/model/mood.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/classes/model/user.php" afterPath="$PROJECT_DIR$/application/classes/model/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/dash/index.php" afterPath="$PROJECT_DIR$/application/views/dash/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/public/auth/index.php" afterPath="$PROJECT_DIR$/application/views/public/auth/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/public/theme.css" afterPath="$PROJECT_DIR$/assets/css/public/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme.css" afterPath="$PROJECT_DIR$/assets/css/theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/templates/theme.php" afterPath="$PROJECT_DIR$/application/views/templates/theme.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/dash/index.js" afterPath="$PROJECT_DIR$/assets/js/dash/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/public/theme.scss" afterPath="$PROJECT_DIR$/assets/scss/public/theme.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/theme.scss" afterPath="$PROJECT_DIR$/assets/scss/theme.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/database.sql" afterPath="$PROJECT_DIR$/doc/database.sql" />
     </list>
     <ignored path="mooditude.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,19 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/dash/index.php">
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/dash/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="68" selection-start="63" selection-end="69" vertical-scroll-proportion="0.027675277">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dash.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/classes/controller/dash.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="52" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+            <state line="52" column="30" selection-start="970" selection-end="970" vertical-scroll-proportion="0.74204946">
               <folding />
             </state>
           </provider>
@@ -61,16 +43,25 @@
       <file leaf-file-name="mood.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/classes/model/mood.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="24" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
+            <state line="117" column="0" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/classes/model/user.php">
+      <file leaf-file-name="mood.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/classes/controller/mood.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="8" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.0">
+            <state line="43" column="76" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dash.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/classes/controller/dash.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="47" selection-start="523" selection-end="528" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,22 +82,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/config/assets.php" />
         <option value="$PROJECT_DIR$/application/views/templates/public/theme.php" />
         <option value="$PROJECT_DIR$/application/classes/controller/public/auth.php" />
-        <option value="$PROJECT_DIR$/application/views/templates/theme.php" />
         <option value="$PROJECT_DIR$/application/bootstrap.php" />
         <option value="/var/www/kohana/3.2/modules/commoneer-1.4/classes/date.php" />
-        <option value="$PROJECT_DIR$/application/classes/controller/mood.php" />
-        <option value="$PROJECT_DIR$/assets/js/dash/index.js" />
         <option value="$PROJECT_DIR$/assets/scss/theme.scss" />
         <option value="$PROJECT_DIR$/assets/scss/public/theme.scss" />
-        <option value="$PROJECT_DIR$/application/views/public/auth/index.php" />
         <option value="$PROJECT_DIR$/assets/scss/typo.scss" />
-        <option value="$PROJECT_DIR$/application/views/dash/index.php" />
-        <option value="$PROJECT_DIR$/application/classes/controller/dash.php" />
         <option value="$PROJECT_DIR$/application/classes/model/user.php" />
+        <option value="$PROJECT_DIR$/application/views/templates/theme.php" />
+        <option value="$PROJECT_DIR$/application/views/public/auth/index.php" />
+        <option value="$PROJECT_DIR$/application/classes/controller/dash.php" />
+        <option value="$PROJECT_DIR$/assets/scss/main.scss" />
+        <option value="$PROJECT_DIR$/application/views/dash/index.php" />
+        <option value="$PROJECT_DIR$/application/classes/controller/mood.php" />
         <option value="$PROJECT_DIR$/application/classes/model/mood.php" />
+        <option value="$PROJECT_DIR$/assets/js/dash/index.js" />
       </list>
     </option>
   </component>
@@ -194,7 +185,153 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mooditude" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,20 +610,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/templates/public/theme.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="29" selection-start="1366" selection-end="1366" vertical-scroll-proportion="-11.333333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///var/www/kohana/3.2/modules/auth/classes/kohana/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="20" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.33215547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="33" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.25795054">
@@ -494,30 +617,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/templates/theme.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="13" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.5295203">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///var/www/kohana/3.2/modules/commoneer-1.4/classes/date.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="29" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.22614841">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/classes/controller/mood.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/dash/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="158" selection-end="158" vertical-scroll-proportion="0.10600707">
           <folding />
         </state>
       </provider>
@@ -550,39 +652,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/public/auth/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="33" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.501845">
-          <folding>
-            <marker date="1325101632000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/classes/controller/dash.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="52" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/classes/model/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="8" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.0">
+        <state line="118" column="8" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.81448764">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/classes/model/mood.php">
+    <entry file="file://$PROJECT_DIR$/application/views/templates/theme.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="24" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0">
+        <state line="57" column="75" selection-start="2000" selection-end="2000" vertical-scroll-proportion="0.7675277">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/templates/public/theme.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="29" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.5461255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/public/auth/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="88" selection-start="724" selection-end="804" vertical-scroll-proportion="0.38007382">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="1" selection-start="192" selection-end="192" vertical-scroll-proportion="0.37102473">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/dash/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="68" selection-start="63" selection-end="69" vertical-scroll-proportion="0.027675277">
+        <state line="8" column="38" selection-start="182" selection-end="182" vertical-scroll-proportion="0.22140221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/classes/controller/dash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="47" selection-start="523" selection-end="528" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/classes/controller/mood.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="76" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/classes/model/mood.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="0" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/dash/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="30" selection-start="970" selection-end="970" vertical-scroll-proportion="0.74204946">
           <folding />
         </state>
       </provider>

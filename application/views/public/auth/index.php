@@ -76,7 +76,6 @@
 		</div>
 		<div class="modal-footer">
 			<input type="submit" name="signup" class="btn primary" value="<?=__('Signup')?>"/>
-			<a href="#" class="btn secondary"><?=__('I changed my mind')?></a>
 		</div>
 	</form>
 </div>

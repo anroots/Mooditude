@@ -20,8 +20,8 @@ class Controller_Dash extends Controller_Main
 	public function action_index()
 	{
 		$this->content->mood = $this->mood;
-		$this->content->statistics =User::current()->statistics();
-		Assets::use_script('raty');
+		$this->content->statistics = User::current()->statistics();
+		Assets::use_script(array('raty', 'modal'));
 	}
 
 }

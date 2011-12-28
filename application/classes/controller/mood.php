@@ -40,10 +40,25 @@ class Controller_Mood extends Controller_Main
 	 */
 	public function action_update()
 	{
-		if ($this->mood->add_score($this->id)) {
-			$this->respond(parent::STATUS_OK, $this->mood->message());
+		if ($this->mood->add_score($this->id)) {;
+			$this->respond(parent::STATUS_OK, $this->mood->message($this->id));
 		}
 		$this->respond(parent::STATUS_ERROR);
 	}
 
+	/**
+	 * Get graph data for moods
+	 *
+	 * Passed to Google Chart API
+	 *
+	 * @ajax
+	 * @since 1.0
+	 */
+	public function action_graph()
+	{
+		if (($data = $this->mood->graph()) === FALSE) {
+			$this->respond(parent::STATUS_ERROR);
+		}
+		$this->respond(parent::STATUS_OK, $data);
+	}
 }

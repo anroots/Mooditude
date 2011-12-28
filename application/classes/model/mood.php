@@ -54,15 +54,12 @@ class Model_Mood extends Commoneer_ORM
 	 * @since 1.0
 	 * @example Mood score: 1, message: "Aww, that's too bad"
 	 * @example Mood score: 10, message: "Wow, you're on top of the world!"
+	 * @param int $score Mood score in range 1...10;
 	 * @return string Mood message
 	 */
-	public function message()
+	public function message($score)
 	{
-		if (!$this->loaded()) {
-			return __('Something went wrong!');
-		}
-
-		return Kohana::$config->load('moods.' . $this->score);
+		return Kohana::$config->load('moods.' . $score);
 	}
 
 	/**
@@ -98,6 +95,36 @@ class Model_Mood extends Commoneer_ORM
 				->where('user_id', '=', User::current()->id)
 				->execute()
 				->get('sum');
-		return $average == 0 ? 0 : $average / $this->count_all();
+		return $average == 0 ? 0 : round($average / $this->count_all(), 3);
+	}
+
+	/**
+	 * Get data for mood graph
+	 *
+	 * @since 1.0
+	 * @return array Array of data for Google Chart
+	 */
+	public function graph()
+	{
+		if ($this->loaded()) {
+			$this->clear();
+		}
+		$data = array();
+
+		$rows = User::current()
+				->moods
+				->order_by('created', 'ASC')
+				->find_all();
+
+		if ($rows->count() > 0) {
+			foreach ($rows as $mood) {
+				/*
+				 * Format: Date, happyness, unhappyness
+				 * Date is converted to ms since epoch
+				 */
+				$data[] = array(strtotime($mood->created) * 1000, (int)$mood->score, 10 - $mood->score);
+			}
+		}
+		return (array)$data;
 	}
 }
