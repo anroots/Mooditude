@@ -15,7 +15,7 @@ return array(
      * This will be appended between the base url and the asset path
      * Normally it's fine to leave it to NULL
      */
-    'assets_url' => NULL,
+    'assets_url' => '../',
 
     /**
      * Array of asset folder locations relative to the DOCROOT
@@ -44,8 +44,8 @@ return array(
         'css' => array(
         ),
         'js' => array(
-            'raty' => '../assets/js/raty-2.1.0/js/jquery.raty.min',
-            'modal' => '../assets/shared/js/libs/bootstrap/modal-1.4.0.min',
+            'raty' => 'assets/js/raty-2.1.0/js/jquery.raty.min',
+            'modal' => 'assets/shared/js/libs/bootstrap/modal-1.4.0.min',
         ),
         'less' => array(
 
