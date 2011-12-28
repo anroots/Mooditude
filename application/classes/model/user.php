@@ -113,12 +113,10 @@ class Model_User extends Model_Auth_User
 	 */
 	public function statistics()
 	{
-		$m = ORM::factory('mood');
-
 		return array(
-			'since' => User::current()->created,
-			'count' => $m->count_all(),
-			'average' => $m->average()
+			'since' => $this->created,
+			'count' => $this->moods->count_all(),
+			'average' => ORM::factory('mood')->average()
 		);
 	}
 }

@@ -52,7 +52,7 @@
 
 			<div class="clearfix"></div>
 
-			<label for="username"><?=__('In-game player name')?></label>
+			<label for="username"><?=__('Username')?></label>
 			<input type="text" id="username" name="username" placeholder="John" maxlength="60" required/>
 		            <span class="help-block">
 		                <?=__('Only alphanumeric characters and dashes please.')?>
@@ -70,7 +70,7 @@
 
 			<p class="small light">
 				<?=__('Please take into consideration that this service was developed mainly<br /> for personal use.
-				The author does not give any guarantees to any aspects<br /> of it\'s usage.
+				The author does not give any guarantees to any aspects<br /> of it\'s usage and/or functionality.
 				You are free to fork the project and adjust it to your needs.')?>
 			</p>
 		</div>

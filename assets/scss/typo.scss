@@ -10,6 +10,15 @@ h1 {
 	font-size: 12px;
 }
 
+.smaller {
+	font-size: 80%;
+}
+
 .light {
 	color:lighten($dark-gray, 40);
+}
+
+
+.txt-center {
+	text-align: center;
 }

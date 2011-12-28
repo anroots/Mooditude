@@ -1,13 +1,22 @@
-<p>
-	<?=__('How were you feeling, on average, during the day?')?>
-</p>
-<div id="star"></div>
+<div class="txt-center" style="height: 120px;">
+	<p id="rate-tooltip">
+		<?=__('How were you feeling, on average, during the day?')?>
+	</p>
 
-<div class="clearfix"></div>
+	<p class="hidden" id="tnx-tooltip">
+		<?=__('Thank you... come again! <span class="light">(or you can :link todays mood.)</span>', array(
+		':link' => '<a href="" id="change-score">' . __('change') . '</a>'))?>
+	</p>
+
+	<div id="star"></div>
+
+	<div class="clearfix"></div>
+</div>
 
 <p class="txt-center">
-	<a data-keyboard="true" class="btn" data-controls-modal="modal-chart"
-	   data-backdrop="true"><?=__('View Mood Chart')?></a>
+	<a data-keyboard="true" class="btn" data-controls-modal="modal-chart" data-backdrop="true">
+		<?=__('View Mood Chart')?>
+	</a>
 </p>
 
 
@@ -26,7 +35,7 @@
 
 	</div>
 	<div class="modal-footer">
-		<?=__(':count mood updates since :since, with the average rating being :average points.', array(
+		<?=__(':count mood updates since :since, with the average rating being <strong>:average</strong> points.', array(
 		':count' => $statistics['count'],
 		':since' => Date::localized_date($statistics['since']),
 		':average' => $statistics['average']

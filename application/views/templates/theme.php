@@ -33,7 +33,12 @@
 <div id="container">
 	<header>
 		<h1>
-			<a href="<?=URL::base()?>"><?=Kohana::$config->load('app.title')?></a>
+			<a href="<?=URL::base()?>">
+				<?=Kohana::$config->load('app.title')?> ::
+				<span class="smaller">
+					<?=User::current()->name?>
+				</span>
+			</a>
 		</h1>
 
 		<h2><?=$title?></h2>

@@ -2,6 +2,22 @@
 google.load("visualization", "1", {packages:["corechart"]});
 
 /**
+ * Hide / show rating tooltips
+ */
+function toggle_tooltips() {
+	if (!$('#rate-tooltip').is(':hidden')) {
+		$('#star').fadeOut('slow');
+		$('#rate-tooltip').fadeOut('slow');
+		$('#tnx-tooltip').fadeIn('slow');
+
+	} else {
+		$('#star').fadeIn('slow');
+		$('#rate-tooltip').fadeIn('slow');
+		$('#tnx-tooltip').fadeOut('slow');
+	}
+}
+
+/**
  * Draw mood graph
  *
  * @since 1.0
@@ -14,10 +30,11 @@ function drawChart() {
 		url:base_url + 'mood/graph',
 		type:'get',
 		async:false,
-		success:function (json) {
+		success:function (json) { // Fetched all moods
 			if (json.status == 200) {
 				moodRows = json.response;
 
+				// Convert string date to JS Date objects
 				var i;
 				for (i = 0; i < moodRows.length; i++) {
 					moodRows[i][0] = new Date(moodRows[i][0]);
@@ -40,17 +57,23 @@ function drawChart() {
 	var options = {
 
 		height:240,
-		pointSize: 2,
-		title:str('Your mood'),
-		tooltip: {
-			trigger: 'hover'
+		pointSize:4,
+		title:str('Your happyness and unhappyness over time'),
+		tooltip:{
+			trigger:'hover'
 		},
-		curveType: 'function',
-		vAxis: {
-			minValue: 1,
-			maxValue: 10,
-			format: '##',
-			title: str('Mood')
+		curveType:'function',
+		vAxis:{
+			minValue:1,
+			maxValue:10,
+			format:'##',
+			title:str('Mood')
+		},
+		hAxis:{
+			'title':str('Time')
+		},
+		legend:{
+			position:'bottom'
 		}
 	};
 
@@ -72,6 +95,10 @@ $(document).ready(function () {
 		}
 	});
 
+	// Change score if already rated
+	$('#change-score').click(toggle_tooltips);
+
+
 	// Raty plugin init
 	$('#star').raty({
 		hintList:['bad', 'poor', 'regular', 'good', 'gorgeous'],
@@ -86,12 +113,14 @@ $(document).ready(function () {
 		starOn:'star-on-big.png',
 		click:function (score, evt) {
 			$.post(base_url + 'mood/update/' + score, function (json) {
+
 				if (json.status == 200) {
-					$('#star').fadeOut('slow');
+					toggle_tooltips();
 					notify(json.response, 'success', false);
 				} else {
 					notify(json.response, 'error', false);
 				}
+
 			});
 		}
 	});

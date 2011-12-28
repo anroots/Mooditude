@@ -95,7 +95,7 @@ class Model_Mood extends Commoneer_ORM
 				->where('user_id', '=', User::current()->id)
 				->execute()
 				->get('sum');
-		return $average == 0 ? 0 : round($average / $this->count_all(), 3);
+		return $average == 0 ? 0 : round($average / User::current()->moods->count_all(), 3);
 	}
 
 	/**
