@@ -4,6 +4,20 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file:///usr/share/php" />
+          <root url="file:///var/www/kohana/3.2/modules" />
+          <root url="file:///var/www/kohana/3.2/system" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/share/php" />
+          <root url="file:///var/www/kohana/3.2/modules" />
+          <root url="file:///var/www/kohana/3.2/system" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
 

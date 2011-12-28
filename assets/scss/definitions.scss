@@ -1,0 +1,31 @@
+// Gray
+$black-night:       #222;
+$dark-gray:         #32373C;
+$footer-gray:       #777;
+$mac-header:        #545454;
+$light-gray:        #E8E8E8;
+$polar-bear-white:  #FBFAFF;
+$touching-white:    #F1F6F1;
+$white:             #FFF;
+
+
+// Measurements
+$container-width: 80%;
+$min-container-width: 800px;
+$default-padding: 20px;
+
+// Typography
+$big: 2em;
+$large: 2.5em; // Iconic
+$huge: 3.5em;
+
+@mixin rounded($radius: 10px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+@mixin shadow($blur: 10px, $spread: 1px, $color: #888888) {
+    -webkit-box-shadow: 0px 0px $blur $spread $color;
+    -moz-box-shadow: 0px 0px $blur $spread $color;
+    box-shadow: 0px 0px $blur $spread $color;
+}
