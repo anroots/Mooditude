@@ -11,3 +11,10 @@ Mooditude is a simplistic, fast and usable mood tracker focused on the individua
 The premise requires dedication for the data is only worth something over time.
 
 Born out of an off day, the project acts as a front end for a mood-storage database and offers a *RESTFUL API* for manipulating and reading the stored data.
+
+Live Demo
+=========
+
+Visit: http://mooditude.sqroot.eu
+
+User: test, Password: test
