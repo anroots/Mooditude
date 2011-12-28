@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Mooditude" default="build">
+	<target name="build"
+	        depends="prepare,lint"/>
+
+	<target name="build-parallel"
+	        depends="prepare,lint"/>
+
+	<target name="inc-build" description="Increment build number">
+		<buildnumber file="doc/build.number"/>
+	</target>
+
+	<target name="clean" description="Cleanup build artifacts">
+		<delete dir="${basedir}/build/api"/>
+		<delete dir="${basedir}/build/code-browser"/>
+		<delete dir="${basedir}/build/coverage"/>
+		<delete dir="${basedir}/build/logs"/>
+		<delete dir="${basedir}/build/pdepend"/>
+		<delete dir="${basedir}/application/logs"/>
+		<delete dir="${basedir}/application/cache"/>
+	</target>
+
+
+	<target name="prepare" depends="clean"
+	        description="Prepare for build">
+		<mkdir dir="${basedir}/build/api"/>
+		<mkdir dir="${basedir}/build/code-browser"/>
+		<mkdir dir="${basedir}/build/coverage"/>
+		<mkdir dir="${basedir}/build/logs"/>
+		<mkdir dir="${basedir}/build/pdepend"/>
+
+
+		<mkdir dir="${basedir}/application/logs"/>
+		<mkdir dir="${basedir}/application/cache"/>
+
+		<echo message="Making system folders writable..."/>
+		<chmod perm="777" file="${basedir}/application/logs" type="both"/>
+		<chmod perm="777" file="${basedir}/application/cache" type="both"/>
+
+	</target>
+
+	<target name="lint">
+		<apply executable="php" failonerror="false">
+			<arg value="-l"/>
+
+			<fileset dir="${basedir}/application">
+				<include name="**/*.php"/>
+				<modified/>
+			</fileset>
+
+		</apply>
+	</target>
+
+
+</project>

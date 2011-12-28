@@ -3,6 +3,9 @@
 return array(
 
     // Default title
-	'title' => ''
+	'title' => 'Mooditude',
+	'description' => 'Simplistic, fast and usable mood tracker focused on the individual.',
+	'codename' => 'Mooditude',
+	'version' => '1.0.0',
 
 );

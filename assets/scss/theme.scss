@@ -1,0 +1,62 @@
+@import "../definitions.scss";
+
+/* Public login page */
+html {
+    background-color: $light-gray;
+}
+
+body {
+    background-color: $light-gray;
+    
+}
+
+
+h1 {
+    text-shadow: 1px 1px 3px #aaaaaa;
+}
+#container {
+    background-color: trancparent;
+    width: 30%;
+    min-width: 300px;
+    margin: 4% auto auto auto;
+}
+
+
+
+#main {
+    background: $white;
+    min-height: 36%;
+    padding: $default-padding $default-padding 2px $default-padding;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    @include rounded(6px);
+    @include shadow(10px, 1px, #bcbcbc);
+
+    p {
+        color: $dark-gray;
+    }
+
+    form {
+        margin-top: 1em;
+    }
+
+    .btn {
+        width: 136%;
+        position: relative;
+        left: -22%;
+        margin-top: 1em;
+    }
+}
+
+
+
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    color: #777;
+    margin-top: 2%;
+    border-top-width: 0px;
+}
+
