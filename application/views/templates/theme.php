@@ -61,8 +61,8 @@
 </div>
 <!--! end of #container -->
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script src="<?=URL::base()?>assets/js/common.js"></script>
 <?=Assets::render(Assets::SCRIPT)?>
 <script src="<?=URL::base()?>assets/shared/js/libs/bootstrap/alerts-1.4.0.min.js"></script>
-<script src="<?=URL::base()?>assets/js/common.js"></script>
 </body>
 </html>

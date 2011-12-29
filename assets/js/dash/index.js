@@ -101,7 +101,18 @@ $(document).ready(function () {
 
 	// Raty plugin init
 	$('#star').raty({
-		hintList:['bad', 'poor', 'regular', 'good', 'gorgeous'],
+		hintList:[
+			str('Suicidal'),
+			str('Worst day ever!'),
+			str('Depressed'),
+			str('Down'),
+			str('Been better...'),
+			str('Fine...and how are you?'),
+			str('Good'),
+			str('Happy'),
+			str('Wonderful!'),
+			str('On top of the world!'),
+		],
 		path:'assets/js/raty-2.1.0/img/',
 		cancelOff:'cancel-off-big.png',
 		cancelOn:'cancel-on-big.png',
@@ -112,7 +123,7 @@ $(document).ready(function () {
 		starOff:'star-off-big.png',
 		starOn:'star-on-big.png',
 		click:function (score, evt) {
-			$.post(base_url + 'mood/update/' + score, function (json) {
+			$.get(base_url + 'mood/update/' + score, function (json) {
 
 				if (json.status == 200) {
 					toggle_tooltips();

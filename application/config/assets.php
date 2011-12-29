@@ -10,46 +10,48 @@
  */
 return array(
 
-    /**
-     * In case you have some crazy routing going on.
-     * This will be appended between the base url and the asset path
-     * Normally it's fine to leave it to NULL
-     */
-    'assets_url' => '../',
+	/**
+	 * In case you have some crazy routing going on.
+	 * This will be appended between the base url and the asset path
+	 * Normally it's fine to leave it to NULL
+	 */
+	'assets_url' => NULL,
 
-    /**
-     * Array of asset folder locations relative to the DOCROOT
-     * array('css' => array('assets/css/'), 'js' => array(), ...
-     * These paths will be searched for the assets you include
-     * **/
-    'assets_paths' => array(
-        'css' => array(
-            'assets/css/',
-            'assets/shared/css/',
-        ),
-        'js' => array(
-            'assets/js/',
-            'assets/shared/js/',
-        ),
-        'less' => array(
-            'assets/less/',
-        )
-    ),
+	'auto_include' => TRUE,
 
-    /**
-     * Predefined assets - a match from here will be searched for first.
-     * Syntax: alias (what you use to include the asset) => path (relative to the DOCROOT, no file extension
-     */
-    'known_assets' => array(
-        'css' => array(
-        ),
-        'js' => array(
-            'raty' => 'assets/js/raty-2.1.0/js/jquery.raty.min',
-            'modal' => 'assets/shared/js/libs/bootstrap/modal-1.4.0.min',
-        ),
-        'less' => array(
+	/**
+	 * Array of asset folder locations relative to the DOCROOT
+	 * array('css' => array('assets/css/'), 'js' => array(), ...
+	 * These paths will be searched for the assets you include
+	 * **/
+	'assets_paths' => array(
+		'css' => array(
+			'assets/css/',
+			'assets/shared/css/',
+		),
+		'js' => array(
+			'assets/js/',
+			'assets/shared/js/',
+		),
+		'less' => array(
+			'assets/less/',
+		)
+	),
 
-        )
-    )
+	/**
+	 * Predefined assets - a match from here will be searched for first.
+	 * Syntax: alias (what you use to include the asset) => path (relative to the DOCROOT, no file extension
+	 */
+	'known_assets' => array(
+		'css' => array(
+		),
+		'js' => array(
+			'raty' => 'assets/js/raty-2.1.0/js/jquery.raty.min',
+			'modal' => 'assets/shared/js/libs/bootstrap/modal-1.4.0.min',
+		),
+		'less' => array(
+
+		)
+	)
 );
 

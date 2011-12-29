@@ -1,8 +1,8 @@
 <?php defined('SYSPATH') or die('No direct script access.') ?>
 
-<p><?=__('Mooditude is a simple service for ')?></p>
+<p><?=__('Mooditude is a simplistic, fast and usable mood tracker focused on the individual. Oh, and it\'s <a href="https://github.com/anroots/Mooditude" title="GitHub">open source</a>.')?></p>
 
-<form action="<?=URL::base()?>public/auth/login" method="post" class="form-stacked">
+<form action="<?=URL::base()?>public/auth/login" method="post" id="login-form" class="form-stacked">
 	<label for="user"><?=__('Username')?>:</label>
 	<input type="text" id="user" placeholder="Mihkel" maxlength="32" name="user" autofocus required/>
 
@@ -20,6 +20,9 @@
 	<p class="txt-center">
 		<?=__('New user?')?>
 		<a data-keyboard="true" data-controls-modal="modal-signup" data-backdrop="true"><?=__('Signup')?></a>
+
+		<?=__('Not convinced?')?>
+		<a href="#" id="demo"><?=__('Demo')?></a>
 	</p>
 </form>
 
@@ -68,14 +71,14 @@
 
 			<div class="clearfix"></div>
 
-			<p class="small light">
-				<?=__('Please take into consideration that this service was developed mainly<br /> for personal use.
-				The author does not give any guarantees to any aspects<br /> of it\'s usage and/or functionality.
+			<p class="small light" class="justify">
+				<?=__('Please take into consideration that this service was developed mainly for personal use.
+				The author does not give any guarantees to any aspects of it\'s usage and/or functionality.
 				You are free to fork the project and adjust it to your needs.')?>
 			</p>
 		</div>
 		<div class="modal-footer">
-			<input type="submit" name="signup" class="btn primary" value="<?=__('Signup')?>"/>
+			<input type="submit" name="signup" class="btn large primary" value="<?=__('Signup')?>"/>
 		</div>
 	</form>
 </div>

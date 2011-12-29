@@ -5,11 +5,16 @@
 
 	<p class="hidden" id="tnx-tooltip">
 		<?=__('Thank you... come again! <span class="light">(or you can :link todays mood.)</span>', array(
-		':link' => '<a href="" id="change-score">' . __('change') . '</a>'))?>
+		':link' => '<a href="#" id="change-score">' . __('change') . '</a>'))?>
 	</p>
 
-	<div id="star"></div>
+	<div style="width: 280px; margin: 0 auto;">
+		<div id="star"></div>
+	</div>
 
+	<span class="help-block">
+		<?=__('Click on a starred rating to save it. Only one rating per day.')?>
+	</span>
 	<div class="clearfix"></div>
 </div>
 

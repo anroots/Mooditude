@@ -98,17 +98,6 @@ if (Kohana::$environment == Kohana::DEVELOPMENT) {
 }
 
 
-if (Kohana::$environment == Kohana::STAGING) {
-
-	$config = array(
-		'base_url' => '/kohana/',
-		'profile' => TRUE,
-		'caching' => FALSE,
-		'errors' => TRUE,
-		'index_file' => FALSE
-	);
-}
-
 Kohana::init($config);
 
 /**

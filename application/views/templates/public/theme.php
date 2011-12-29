@@ -16,6 +16,7 @@
 
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="<?=URL::base()?>assets/shared/css/bootstrap-1.4.0.min.css">
+	<link rel="stylesheet" href="<?=URL::base()?>assets/shared/css/aristo/jquery-ui-1.8.7.custom.css">
 	<link rel="stylesheet" href="<?=URL::base()?>assets/css/public/theme.css">
 	<?=Assets::render(Assets::CSS)?>
 	<!-- end CSS-->
@@ -47,6 +48,8 @@
 	</footer>
 </div>
 <!--! end of #container -->
+<script src="<?=URL::base()?>assets/shared/js/libs/jquery-ui-1.8.16.min.js"></script>
+<script src="<?=URL::base()?>assets/js/common.js"></script>
 <?=Assets::render(Assets::SCRIPT)?>
 </body>
 </html>

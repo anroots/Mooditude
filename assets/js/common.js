@@ -25,3 +25,21 @@ function notify(text, type, translate) {
 	}
 	$('#notifications').append('<div data-alert class="alert-message fade in ' + type + '"><a class="close" href="#">×</a><p>' + (translate ? str(text) : text ) + '</p></div>');
 }
+
+/**
+ *
+ * @param context
+ */
+function flash_green(context) {
+	return _flash(context, '#97DB97');
+}
+
+/**
+ *
+ * @param context
+ * @param color
+ */
+function _flash(context, color) {
+	original_color = $(context).css('background-color');
+	$(context).animate({ backgroundColor: color }, 500).animate({backgroundColor:original_color });
+}
