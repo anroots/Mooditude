@@ -20,6 +20,12 @@ Copy Kohana Database config file from https://github.com/kohana/database/blob/3.
 
 Modify application/bootstrap.php and replace the base url.
 Modify index.php and point MODPATH and SYSPATH to correct paths.
+Usage
+=====
+
+The original goal was to develop the API to enable a wide range of clients to interact with the service.
+One example is in the Python folder. Modify python/mooditude.py settings and place it (and the .sh) in ~/bin. Then all you need to do is write mooditude 6 and your status for today gets updated.
+The Python script is written for Ubuntu, Gnome 3 and has dependencies.
 
 TODO
 ======
