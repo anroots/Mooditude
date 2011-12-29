@@ -17,8 +17,9 @@ Install
 
 Create a new database and drop the doc/database.sql file in there. The default user/password is test/test.
 Copy Kohana Database config file from https://github.com/kohana/database/blob/3.2/master/config/database.php and replace relevant parts with your connection settings.
-Modify application/bootstrap.php and replace the base url.
 
+Modify application/bootstrap.php and replace the base url.
+Modify index.php and point MODPATH and SYSPATH to correct paths.
 
 Live Demo
 =========

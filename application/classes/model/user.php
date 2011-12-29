@@ -81,7 +81,7 @@ class Model_User extends Model_Auth_User
 	public static function current()
 	{
 		if (Model_User::$_current_user === NULL) {
-			Model_User::$_current_user = Auth::instance()->get_user();
+			Model_User::$_current_user = ORM::factory('user');
 		}
 		return Model_User::$_current_user;
 	}

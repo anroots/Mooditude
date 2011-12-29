@@ -124,7 +124,8 @@ Kohana::modules(array(
 	'unittest' => MODPATH . 'unittest', // Unit testing
 	//'userguide' => MODPATH . 'userguide', // User guide and API documentation
 	'notify' => MODPATH . 'notify',
-	'commoneer' => MODPATH . 'commoneer-1.4'
+	'commoneer' => MODPATH . 'commoneer-1.4',
+	'twitter_oauth' => MODPATH . 'kohana_twitteroauth'
 ));
 
 /**
@@ -138,7 +139,6 @@ Route::set('public', '<directory>(/<controller>(/<action>(/<id>(/<param1>))))', 
 	'directory' => 'public',
 	'controller' => 'auth',
 ));
-
 
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 		->defaults(array(

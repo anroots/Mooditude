@@ -12,9 +12,10 @@ class Model_Mood extends Commoneer_ORM
 	 *
 	 * @since 1.0
 	 * @param int $score Mood rating from 1...10
+	 * @param int $user_id User ID
 	 * @return bool|int Insert ID or FALSE
 	 */
-	public function add_score($score)
+	public function add_score($score, $user_id = NULL)
 	{
 
 		// Update existing score (only one score per day)
@@ -25,7 +26,7 @@ class Model_Mood extends Commoneer_ORM
 		}
 
 		$model->score = $score;
-		$model->user_id = User::current()->id;
+		$model->user_id = $user_id === NULL ? User::current()->id : $user_id;
 
 		try {
 			$model->save();
@@ -70,6 +71,10 @@ class Model_Mood extends Commoneer_ORM
 	 */
 	public function today()
 	{
+		if (!User::current()->loaded()) {
+			return NULL;
+		}
+
 		$q = ORM::factory('mood')
 				->where('created', '>=', Date::mysql_date(date('Y-m-d')))
 				->where('created', '<=', Date::mysql_date(date('Y-m-d 23:59:59')))
