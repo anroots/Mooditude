@@ -125,7 +125,6 @@ Kohana::modules(array(
 	//'userguide' => MODPATH . 'userguide', // User guide and API documentation
 	'notify' => MODPATH . 'notify',
 	'commoneer' => MODPATH . 'commoneer-1.4',
-	'twitter_oauth' => MODPATH . 'kohana_twitteroauth'
 ));
 
 /**
