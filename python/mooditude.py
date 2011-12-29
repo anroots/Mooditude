@@ -1,8 +1,26 @@
 #!/usr/local/bin/python
 
-# Modified example by Michael Foord
+# Original example on python CookieJar by Michael Foord
+# Modified by Ando Roots
 # Built to give commandline update connectivity with Mooditude API
 # Hackish. Very.
+
+# Mooditude settings begin
+
+#The URL of your Mooditude installatin (WITH tailing slash)
+mooditude_url =  'http://mooditude.sqroot.eu/'
+
+# Your username
+username = 'test'
+
+# Your password
+password = 'test'
+
+# Whether to use Gnome3-s notify-send utility
+gnome3 = True;
+
+# Mooditude settings end
+
 
 # 31-08-04
 #v1.0.0 
@@ -23,6 +41,10 @@
 COOKIEFILE = 'cookies.lwp'          # the path and filename that you want to use to save your cookies in
 import os.path
 import urllib
+import sys
+import json
+import subprocess
+
 
 cj = None
 ClientCookie = None
@@ -69,19 +91,19 @@ if cj != None:                                  # now we have to install our Coo
 # (Note that if we are using ClientCookie we haven't explicitly imported urllib2)
 # as an example :
 
-theurl = 'http://mooditude.sqroot.eu/'         # an example url that sets a cookie, try different urls here and see the cookie collection you can make !
-txdata =  urllib.urlencode({'user' : 'test',
-    'pass' : 'test',
+
+txdata =  urllib.urlencode({'user' : username,
+    'pass' : password,
     'login' : 'Login'
     })
                                                                       # if we were making a POST type request, we could encode a dictionary of values here - using urllib.urlencode
 txheaders =  {'User-agent' : 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'}          # fake a user agent, some websites (like google) don't like automated exploration
 
 try:
-    req = Request(theurl+'public/auth/login', txdata, txheaders)            # create a request object
+    req = Request(mooditude_url+'public/auth/login', txdata, txheaders)            # create a request object
     handle = urlopen(req)                               # and open it to return a handle on the url
 except IOError, e:
-    print 'We failed to open "%s".' % theurl
+    print 'We failed to open "%s".' % mooditude_url
     if hasattr(e, 'code'):
         print 'We failed with error code - %s.' % e.code
 else:
@@ -99,15 +121,19 @@ else:
     cj.save(COOKIEFILE)                     # save the cookies again
 
 # Update status
-txdata =  urllib.urlencode({'score' : 2})
-req = Request(theurl+'mood/update/2', txdata, txheaders)            # create a request object
+txdata =  urllib.urlencode({})
+
+print "Updating Mooditude with score "+sys.argv[1]
+req = Request(mooditude_url+'mood/update/'+sys.argv[1], txdata, txheaders)            # create a request object
 handle = urlopen(req)                               # and open it to return a handle on the url
 
-import json
+
 
 decoded = json.loads(handle.read())
-print decoded['status']
+print "API response: " + str(decoded['status'])
 
-import subprocess
-command = 'notify-send "Mooditude::'+str(decoded["status"])+'" "'+decoded["response"]+'"'
-p = subprocess.Popen(command, shell=True, bufsize=0, stdout=subprocess.PIPE, universal_newlines=True)
+if (gnome3):
+    command = 'notify-send "Mooditude::'+str(decoded["status"])+'" "'+decoded["response"]+'"'
+    subprocess.Popen(command, shell=True, bufsize=0, stdout=subprocess.PIPE, universal_newlines=True)
+
+print "END"

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64389119-2239-4908-9972-82a3790d7ff1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/mooditude.py" afterPath="$PROJECT_DIR$/python/mooditude.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="64389119-2239-4908-9972-82a3790d7ff1" name="Default" comment="" />
     <ignored path="mooditude.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +26,21 @@
         <entry file="file://$PROJECT_DIR$/application/views/public/auth/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="3" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="-0.625">
-              <folding />
+              <folding>
+                <marker date="1325132964000" expanded="true" signature="358:1068" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="854:1060" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="1138:3155" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="1219:3148" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="1248:1350" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="1298:1341" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="1377:3009" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="1586:1671" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="1906:2011" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="2235:2334" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="2530:2550" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="2727:3000" placeholder="..." />
+                <marker date="1325132964000" expanded="true" signature="3038:3139" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -574,7 +585,21 @@
     <entry file="file://$PROJECT_DIR$/application/views/public/auth/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="-0.625">
-          <folding />
+          <folding>
+            <marker date="1325132964000" expanded="true" signature="358:1068" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="854:1060" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="1138:3155" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="1219:3148" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="1248:1350" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="1298:1341" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="1377:3009" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="1586:1671" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="1906:2011" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="2235:2334" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="2530:2550" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="2727:3000" placeholder="..." />
+            <marker date="1325132964000" expanded="true" signature="3038:3139" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
