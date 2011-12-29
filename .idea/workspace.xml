@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64389119-2239-4908-9972-82a3790d7ff1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/public/auth/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/bootstrap.php" afterPath="$PROJECT_DIR$/application/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/assets.php" afterPath="$PROJECT_DIR$/application/config/assets.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/dash/index.php" afterPath="$PROJECT_DIR$/application/views/dash/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/public/auth/index.php" afterPath="$PROJECT_DIR$/application/views/public/auth/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/templates/public/theme.php" afterPath="$PROJECT_DIR$/application/views/templates/public/theme.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/templates/theme.php" afterPath="$PROJECT_DIR$/application/views/templates/theme.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/public/theme.css" afterPath="$PROJECT_DIR$/assets/css/public/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/theme.css" afterPath="$PROJECT_DIR$/assets/css/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/typo.css" afterPath="$PROJECT_DIR$/assets/css/typo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/common.js" afterPath="$PROJECT_DIR$/assets/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/dash/index.js" afterPath="$PROJECT_DIR$/assets/js/dash/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/typo.scss" afterPath="$PROJECT_DIR$/assets/scss/typo.scss" />
-    </list>
+    <list default="true" id="64389119-2239-4908-9972-82a3790d7ff1" name="Default" comment="" />
     <ignored path="mooditude.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -196,7 +180,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="18" width="1384" height="758" extended-state="1" />
+    <frame x="-9" y="18" width="1384" height="758" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
