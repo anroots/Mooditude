@@ -10,13 +10,13 @@
       <library name="PHP">
         <CLASSES>
           <root url="file:///usr/share/php" />
-          <root url="file:///var/www/kohana/3.2/modules" />
-          <root url="file:///var/www/kohana/3.2/system" />
+          <root url="file://$MODULE_DIR$/../kohana/3.2/modules" />
+          <root url="file://$MODULE_DIR$/../kohana/3.2/system" />
         </CLASSES>
         <SOURCES>
           <root url="file:///usr/share/php" />
-          <root url="file:///var/www/kohana/3.2/modules" />
-          <root url="file:///var/www/kohana/3.2/system" />
+          <root url="file://$MODULE_DIR$/../kohana/3.2/modules" />
+          <root url="file://$MODULE_DIR$/../kohana/3.2/system" />
         </SOURCES>
       </library>
     </orderEntry>
