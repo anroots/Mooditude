@@ -21,6 +21,11 @@ Copy Kohana Database config file from https://github.com/kohana/database/blob/3.
 Modify application/bootstrap.php and replace the base url.
 Modify index.php and point MODPATH and SYSPATH to correct paths.
 
+TODO
+======
+
+RESTFUL API and documentation
+
 Live Demo
 =========
 
