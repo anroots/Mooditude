@@ -2,3 +2,4 @@ application/logs/*
 application/cache/*
 application/config/database.php
 .sass-cache/*
+.idea/*
